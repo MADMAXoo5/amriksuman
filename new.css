@@ -217,6 +217,7 @@ body {
   margin: 0 auto;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+/* Mobile Styles (phones, less than 768px) */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -264,45 +265,39 @@ body {
   }
 }
 
-
-/* ================= LAPTOP/DESKTOP VIEW ================= */
-@media (min-width: 1024px) {
+/* Laptop Styles (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
-    padding: 15px 30px;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 10px 15px;
   }
 
   .card,
   .pricing-plan {
-    width: 30%;
-  }
-
-  .click-box {
-    margin-right: 700px;
-    margin-bottom: 66vh;
-    width: auto;
+    width: 45%;
   }
 
   .first h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .first p {
-    font-size: 1.5em;
+    font-size: 1.2em;
+  }
+
+  .first .cta-btn {
+    font-size: 1.1em;
   }
 
   #resources h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
 
   #resources p {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
-
 .click-box {
-  padding: 15px;
+  padding: 15px 15px;
   background: linear-gradient(135deg, grey, white);
   color: white;
   border-radius: 12px;
@@ -310,8 +305,11 @@ body {
   cursor: pointer;
   font-size: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 300px;
-  margin: 40px auto;
+  margin: 10px;
+  margin-bottom: 66vh;
+
+  margin-top: 40px;
+  margin-right: 700px;
 }
 
 .click-box:hover {
