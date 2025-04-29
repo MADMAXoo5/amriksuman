@@ -175,3 +175,81 @@ body {
     width: 90%;
   }
 }
+/* ========== DESKTOP / LAPTOP VIEW ========== */
+@media (min-width: 1024px) {
+  /* Navbar */
+  .navbar {
+    justify-content: flex-end;
+    padding: 20px 60px;
+  }
+
+  .navbar a {
+    font-size: 1.1em;
+    padding: 12px 24px;
+  }
+
+  /* Hero Section */
+  .first {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 120px 80px;
+    height: 100vh;
+    text-align: left;
+  }
+
+  .first h1 {
+    font-size: 5em;
+  }
+
+  #slogan {
+    font-size: 2em;
+  }
+
+  .click-box {
+    width: 350px;
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  /* Services Section */
+  .services h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+  }
+
+  .card-container {
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 60px;
+  }
+
+  .card {
+    width: 30%;
+    min-height: 420px;
+  }
+
+  /* Resources Section */
+  #resources {
+    padding: 100px 60px;
+  }
+
+  #resources h1 {
+    font-size: 3em;
+  }
+
+  #resources p {
+    font-size: 1.3em;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 60px;
+    font-size: 1.1em;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+    margin: 0 15px;
+  }
+}
