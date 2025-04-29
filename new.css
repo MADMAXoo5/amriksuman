@@ -219,81 +219,18 @@ body {
 }
 /* Mobile Styles (phones, less than 768px) */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-
-  .navbar a {
-    padding: 10px;
-    width: 100%;
-    display: block;
-  }
-
-  .first {
-    height: 100vh;
-    background-image: url("hero-image.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-  }
-
   .first h1 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
-
-  .first p {
-    font-size: 1.2em;
-  }
-
   #slogan {
-    font-size: 1.1em;
-    text-align: center;
+    font-size: 1em;
   }
-
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
   .click-box {
     width: 90%;
-    margin-top: 20px;
-    font-size: 16px;
-  }
-}
-
-/* Laptop Styles (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .navbar {
-    padding: 10px 15px;
-  }
-
-  .card,
-  .pricing-plan {
-    width: 45%;
-  }
-
-  .first h1 {
-    font-size: 3em;
-  }
-
-  .first p {
-    font-size: 1.2em;
-  }
-
-  .first .cta-btn {
-    font-size: 1.1em;
-  }
-
-  #resources h1 {
-    font-size: 2.5em;
-  }
-
-  #resources p {
-    font-size: 1.1em;
   }
 }
 .click-box {
