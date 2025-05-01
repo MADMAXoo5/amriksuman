@@ -163,8 +163,8 @@ button:hover {
     font-size: 16px;
   }
 }
-/* Tablet (501px to 768px) */
-@media (min-width: 501px) and (max-width: 768px) {
+/* Tmobile (600) */
+@media (max-width: 600px) {
   .form-container {
     padding: 30px;
     width: 80%;
