@@ -42,10 +42,11 @@ body {
   background-color: #ff6347;
 }
 
-.first {
+.first1 {
   height: 90vh;
   background-image: url("hero-image.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: right;
   display: flex;
   justify-content: right;
@@ -62,7 +63,6 @@ body {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   forced-color-adjust: auto;
-  margin-bottom: 20px;
 }
 
 .first p {
@@ -217,7 +217,10 @@ body {
   margin: 0 auto;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-@media (max-width: 767px) {
+@media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
   body {
     background-size: cover;
     background-position: center;
@@ -226,54 +229,99 @@ body {
 
   .navbar {
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
     background-color: #222;
-    padding: 10px;
+    padding: 0px;
     position: relative;
     text-align: center;
   }
 
   .navbar a {
     width: 100%;
-    padding: 12px 0;
+    padding: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #444;
+    margin: 0;
     text-align: center;
     border-bottom: 1px solid #444;
     font-size: 1.1em;
   }
 
   .first {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    height: auto;
-    background-position: center;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 10px;
+    color: #f4f5f5;
+
+    font-weight: 700;
     text-align: center;
+    margin: 20px auto;
+    max-width: 90%;
+    animation: pulse 1.2s ease-out both;
+  }
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .first:hover {
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
   }
 
   .first h1 {
     font-size: 2.2em;
     margin-bottom: 10px;
+    margin: 0 auto;
+    text-align: top;
+    padding: 0 20px;
+  }
+  .first p {
+    font-size: 1.2em;
+    margin: 10px auto;
   }
 
   #slogan {
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .click-box {
-    width: 90%;
-    margin: 20px auto;
-    padding: 15px;
-    font-size: 1em;
+    width: 50%;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #333, #666);
+    font-size: 14px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     text-align: center;
     background: linear-gradient(135deg, #333, #666);
     color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 20px auto;
+    position: relative;
+    margin-top: 300px;
   }
 
-  .click-box h3 {
+  .click-box a {
+    color: blue;
+    text-decoration: doubleline;
+    font-weight: bold;
     font-size: 1.1em;
     margin: 0;
+    margin-top: 100px;
   }
 
   .services {
@@ -283,58 +331,72 @@ body {
   .services h2 {
     font-size: 2em;
     margin-bottom: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
   }
 
   .card-container {
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
+    align-items: center;
   }
 
   .card {
-    width: 95%;
+    width: 80%;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
     text-align: center;
   }
 
   .card img {
     border-radius: 10px;
+    width: 100%;
+    height: auto;
   }
 
   .card h3 {
     margin-top: 10px;
-    font-size: 1.2em;
+    font-size: 1.25em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    cursor: pointer;
   }
 
   .card p {
     font-size: 0.95em;
     padding: 0 10px;
+    cursor: pointer;
+    font-style: bold;
   }
 
   #resources {
-    padding: 40px 20px;
+    padding: 15px 5px;
   }
 
   #resources h1 {
-    font-size: 1.8em;
+    font-size: 1.9em;
     margin-bottom: 15px;
-  }
-
-  #resources p {
-    font-size: 1em;
-    text-align: justify;
     padding: 0 10px;
   }
 
+  #resources p {
+    font-size: 10px;
+    text-align: justify;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+
   .footer {
-    padding: 30px 20px;
+    padding: 9px 0px;
     font-size: 0.9em;
   }
 
   .footer p {
     text-align: center;
-    padding: 10px 0;
+    padding: 0px 0;
   }
 
   .social-icons {
@@ -350,7 +412,36 @@ body {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 10px 15px;
+  }
 
+  .card,
+  .pricing-plan {
+    width: 45%;
+  }
+
+  .first h1 {
+    font-size: 3em;
+  }
+
+  .first p {
+    font-size: 1.2em;
+  }
+
+  .first .cta-btn {
+    font-size: 1.1em;
+  }
+
+  #resources h1 {
+    font-size: 2.5em;
+  }
+
+  #resources p {
+    font-size: 1.1em;
+  }
+}
 .click-box {
   padding: 15px 15px;
   background: linear-gradient(135deg, grey, white);
@@ -361,10 +452,11 @@ body {
   font-size: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 10px;
-  margin-bottom: 66vh;
-
-  margin-top: 40px;
-  margin-right: 700px;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 100px;
+  margin-right: auto;
+  width: 200px;
 }
 
 .click-box:hover {
