@@ -176,7 +176,7 @@ body {
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .contact-container {
     flex-direction: column;
     height: auto;
@@ -191,13 +191,16 @@ body {
 
   .contact-left-title h2 {
     font-size: 30px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-top: 60px;
   }
 
-  .contact-left button {
-    width: 100%;
+  #button {
+    width: 50%;
+    padding: 15px;
+    font-size: 18px;
   }
-
-  .contact-right img {
-    max-width: 80%;
+  .contact-inputs {
+    width: 90%;
   }
 }
