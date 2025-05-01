@@ -367,7 +367,7 @@ body {
   }
   #courses p {
     padding: 10px 10px;
-    font-size: 0.4em;
+    font-size: 0.45em;
   }
   #resources p {
     padding: 10px 10px;
@@ -376,8 +376,14 @@ body {
   #courses h2 {
     font-size: 1.5em;
   }
+  #courses h4 {
+    font-size: 0.9em;
+  }
   #resources h2 {
     font-size: 1.5em;
+  }
+  #courses a {
+    font-size: 0.3em;
   }
 }
 /* Tablet and small laptop (768px to 1024px) */
