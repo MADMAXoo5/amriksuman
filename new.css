@@ -462,6 +462,7 @@ body {
     margin-left: 70%;
     margin-right: 2%;
     align-items: right;
+    height: 100vh;
   }
 
   .click-box:hover {
