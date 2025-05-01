@@ -245,6 +245,7 @@ body {
     border-bottom: 1px solid #444;
     margin: 0;
     text-align: center;
+    border-bottom: 1px solid #444;
     font-size: 0.38em;
     font-style: bold;
   }
@@ -393,9 +394,33 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1920px) {
   .navbar {
-    padding: 10px 15px;
+    background-color: #333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .navbar a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+  }
+
+  .navbar a.active {
+    background-color: #ff6347;
   }
 
   .card,
@@ -422,7 +447,42 @@ body {
   #resources p {
     font-size: 1.1em;
   }
+  .click-box {
+    size: 20px;
+    padding: 10px 5px;
+    background: linear-gradient(135deg, grey, white);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin: 8px;
+    margin-left: 70%;
+    margin-right: 2%;
+    align-items: right;
+  }
+
+  .click-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+  .click-box:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .click-box a {
+    font-size: 10px;
+    margin: 1px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+  }
+  .click-box a:hover {
+    text-decoration: underline;
+  }
 }
+/* join tele button */
 .click-box {
   size: 20px;
   padding: 10px 5px;
