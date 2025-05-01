@@ -241,12 +241,12 @@ body {
 
   .navbar a {
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 3px;
     border-bottom: 1px solid #444;
     margin: 0;
     text-align: center;
     border-bottom: 1px solid #444;
-    font-size: 0.1em;
+    font-size: 0.3em;
   }
 
   .first {
